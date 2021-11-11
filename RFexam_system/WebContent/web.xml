@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <filter>
+  	<filter-name>EncodingFilter</filter-name>
+  	<filter-class>com.filters.EncodingFilter</filter-class>
+  	<init-param>
+  		<param-name>encoding</param-name>
+  		<param-value>utf-8</param-value>
+  	</init-param>
+  </filter>	
+  <filter-mapping>
+  	<filter-name>EncodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+	
+	
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>ShowTestServlet</servlet-name>
+    <servlet-class>com.servlets.ShowTestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetCourseServlet</servlet-name>
+    <servlet-class>com.servlets.GetCourseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddTestServlet</servlet-name>
+    <servlet-class>com.servlets.AddTestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetCourseAndClasstbServlet</servlet-name>
+    <servlet-class>com.servlets.GetCourseAndClasstbServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CreateTestServlet</servlet-name>
+    <servlet-class>com.servlets.CreateTestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.servlets.stuexam.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>StartTestServlet</servlet-name>
+    <servlet-class>com.servlets.stuexam.StartTestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ResultServlet</servlet-name>
+    <servlet-class>com.servlets.stuexam.ResultServlet</servlet-class>
+  </servlet>
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>ShowTestServlet</servlet-name>
+    <url-pattern>/servlet/ShowTestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetCourseServlet</servlet-name>
+    <url-pattern>/servlet/GetCourseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddTestServlet</servlet-name>
+    <url-pattern>/servlet/AddTestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetCourseAndClasstbServlet</servlet-name>
+    <url-pattern>/servlet/GetCourseAndClasstbServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateTestServlet</servlet-name>
+    <url-pattern>/servlet/CreateTestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StartTestServlet</servlet-name>
+    <url-pattern>/servlet/StartTestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResultServlet</servlet-name>
+    <url-pattern>/servlet/ResultServlet</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//WebContent/stuexam/login.jsp=UTF-8
+encoding//src/com/common/DBHelper.java=GBK
+encoding//src/com/dao/BaseDao.java=GBK
+encoding//src/com/servlets/CreateTestServlet.java=UTF-8
+encoding//src/com/servlets/GetCourseAndClasstbServlet.java=GBK
+encoding/<project>=GBK
