@@ -62,18 +62,7 @@ public class V_test {
 	public void setAns(String ans) {
 		this.ans = ans;
 	}
-	public V_test(int tid, int eid, String question, String ansA, String ansB,
-			String ansC, String ansD, String ans) {
-		super();
-		this.tid = tid;
-		this.eid = eid;
-		this.question = question;
-		this.ansA = ansA;
-		this.ansB = ansB;
-		this.ansC = ansC;
-		this.ansD = ansD;
-		this.ans = ans;
-	}
+	
 	public V_test() {
 		super();
 	}
